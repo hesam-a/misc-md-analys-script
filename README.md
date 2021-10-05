@@ -1,1 +1,1 @@
-# Misc-MD-codes
+# Miscellaneous python scripts for MD trjacetory analysis
