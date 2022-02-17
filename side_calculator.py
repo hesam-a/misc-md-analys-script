@@ -13,10 +13,14 @@ cmd = run(["head", "-1", g], stdout=PIPE, stderr=PIPE, universal_newlines=True);
 
 natoms = int(cmd.stdout.split()[0]);
 side_length=[];
+
 for line in f:
     if line.strip() == str(natoms):
         a = ' '.join(islice(f,1));
         side_length.append(float(a.split()[0]));
+
+
 print("mean:     {:>7}".format(round(mean(side_length),3)));
 print("STD Dev:  {:>7}".format(round(stdev(side_length),3)));
+
 f.close();
