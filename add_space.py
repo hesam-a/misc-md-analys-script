@@ -17,7 +17,9 @@ for line in f:
         c=a.splitlines()
         for i in range(natoms):
             g.write('    '+c[i]+'\n')
+        
         g.close()
     else:
         pass
+
 f.close()
