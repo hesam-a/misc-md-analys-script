@@ -1,1 +1,1 @@
-# Miscellaneous python scripts for MD trjacetory analysis
+# Miscellaneous python and C++ scripts for MD trjacetory analysis
