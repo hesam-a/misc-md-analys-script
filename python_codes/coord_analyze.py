@@ -3,8 +3,13 @@ import sys
 
 # extracts the coordinates of a ligand/molecule out of arc/trajectory file (from the beginning)
 
-arcReader = open(sys.argv[1],'r')
-natoms = int(sys.argv[2])
+g = sys.argv[1]
+arcReader = open(g,'r')
+
+cmd = run(["head", "-1", g], stdout=PIPE, stderr=PIPE, universal_newlines=True)
+#print(cmd.stdout.split()[0])
+
+natoms = int(cmd.stdout.split()[0])
 
 counter=0
 for line in arcReader:
