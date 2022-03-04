@@ -2,7 +2,7 @@ from itertools import islice
 import sys
 
 # this program generates trajectory of ONLY molecule(s) of your interest (excluding the solvent) from md trajectory file 
-#useful for conformational analysis or use in mdtraj
+#useful for conformational analysis or use in cpptraj of Amber Tools
 
 arcReader = open(sys.argv[1],'r')
 natoms = int(sys.argv[2])
