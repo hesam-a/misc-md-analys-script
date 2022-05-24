@@ -3,7 +3,7 @@ from itertools import islice
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 
-# after analyzing the energies of a trajectory/molecule outputs the energy components in a csv file and plot them.
+# after analyzing the energies of a trajectory/molecule, outputs the energy components in a csv file and draws its plot.
 
 f = open(sys.argv[1],'r')
 
